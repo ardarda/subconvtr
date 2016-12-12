@@ -1,14 +1,13 @@
 Gem::Specification.new do |s|
   s.name        = 'subconvtr'
-  s.version     = '0.0.3'
+  s.version     = '0.0.5'
   s.executables << 'subconvtr'
   s.date        = '2016-12-12'
   s.summary     = "Merhabaaa!"
-  s.description = "A simple hello world gem"
+  s.description = "Converts the target file from windows-1254 to utf-8 encoding."
   s.authors     = ["ardarda"]
   s.email       = 'ardacck@gmail.com'
   s.files       = ["lib/subconvtr.rb"]
-  s.homepage    =
-    'http://rubygems.org/gems/subconvtr'
-  s.license       = 'MIT'
+  s.homepage    = 'https://github.com/ardarda/subconvtr'
+  s.license     = 'MIT'
 end
