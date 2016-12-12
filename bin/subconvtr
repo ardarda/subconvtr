@@ -1,4 +1,4 @@
 #!/usr/bin/env ruby
 
 require 'subconvtr'
-puts Subconvtr.convert(ARGV[0])
+puts Subconvtr.start

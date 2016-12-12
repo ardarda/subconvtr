@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = 'subconvtr'
-  s.version     = '0.0.5'
+  s.version     = '0.0.8'
   s.executables << 'subconvtr'
   s.date        = '2016-12-12'
   s.summary     = "Merhabaaa!"
