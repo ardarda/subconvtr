@@ -1,0 +1,4 @@
+#!/usr/bin/env ruby
+
+require 'subconvtr'
+puts Subconvtr.hi(ARGV[0])
