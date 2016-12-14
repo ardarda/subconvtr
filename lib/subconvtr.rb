@@ -2,6 +2,8 @@ module Subconvtr
 
   class Monitor
 
+    def initialize
+    end
     # Converts the target file from windows-1254 to utf-8 encoding.
     def run
 
@@ -14,7 +16,7 @@ module Subconvtr
           `iconv -f windows-1254 -t utf-8 "#{current}" > temp24124eqqweqwrfsdf.srt && mv temp24124eqqweqwrfsdf.srt "#{current}"`
           puts `file -I "#{current}"`
         else
-          print '.'
+          # print '.'
         end
       end
 
@@ -28,4 +30,23 @@ module Subconvtr
     end
   end
 end
+
+# trapping the ctrl+c exit
+trap "SIGINT" do
+  puts ""
+  puts "Exiting"
+  puts "......."
+  puts "See you next time 🐰"
+  puts ""
+  exit 130
+end
+
+puts `pwd`
+puts 'Folder above is being watched 🤓'
+puts 'Observing for .srt files, i.e. ones having windows-1254 charset will be converted into utf-8'
+puts 'Files will be analyzed before conversion 🚀'
+puts ''
+puts 'Press Ctrl+C to exit'
+
 Subconvtr::Monitor.start
+
